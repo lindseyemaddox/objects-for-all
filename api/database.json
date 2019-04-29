@@ -29,6 +29,10 @@
       "id": 6,
       "name": "Ribbon",
       "categoryId": 3
+    },
+    {
+      "name": "poop",
+      "id": 7
     }
   ],
   "category": [
@@ -55,6 +59,10 @@
     {
       "name": "Colored Pencils",
       "id": 6
+    },
+    {
+      "name": "markers",
+      "id": 7
     }
   ],
   "order": [

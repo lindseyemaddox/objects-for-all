@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>One Object For All and All For One</title>
 </head>
+
 <body>
 
     <h1>What I found in the Junk Drawer</h1>
@@ -13,6 +15,18 @@
     <button id="btn-getCategories">Get Categories</button>
     <button id="btn-getCategoryDetails">Get Category Details</button>
     <div id="container"></div>
+
+    <div id="select_box_wrapper">
+        <select id="junk__drop"></select>
+    </div>
+
+    <h2>More Junk</h2>
+    <fieldset>
+        <label for="junk__more">Name:</label>
+        <input id="junk__more" class="junk__more" type="text" autofocus />
+    </fieldset>
+
+    <button class="btn more__save" id="btn-saveMore">Save More Junk</button>
 
     <h2>More Junk Categories</h2>
     <fieldset>
@@ -27,4 +41,5 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/dbcalls.js"></script>
 </body>
+
 </html>

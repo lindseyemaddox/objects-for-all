@@ -1,8 +1,8 @@
+
 const categoryDom = (obj) => {
-    return `<div>
-                ${obj.name}
-                ${obj.id}
-            </div>`;
+    return `
+        <option>${obj.name}</option>
+    `;
 };
 
 const categoryDetailDom = (obj) => {
@@ -13,14 +13,13 @@ const categoryDetailDom = (obj) => {
 };
 
 const buildCategoryDom = (data) => {
-    mainContainer.innerHTML = "";
+    junk__drop.innerHTML = "";
     data.forEach(element => {
-        mainContainer.innerHTML += categoryDom(element);
+        junk__drop.innerHTML += categoryDom(element);
     });
 };
 
 const buildCategoryDetailDom = (data) => {
-    console.log("data", data);
     mainContainer.innerHTML = "";
     mainContainer.innerHTML += `<h2>${data.name}</h2>`;
     data.junk.forEach(element => {
